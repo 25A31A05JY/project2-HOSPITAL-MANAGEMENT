@@ -1,0 +1,18 @@
+1.Start
+2.Initialize
+->create patient list(arrays/linked list)
+->create queue for waiting patients
+3.Display menu
+->add patient
+->view patient
+->search patient
+->delete patient
+->exit
+4.read choice
+5.perform operation
+->add-input details,store in list,addto queue
+->view-display all patients
+->search-find patient by id\name
+->delete-remove patient record
+6.Repeat:until exit is selected
+7.End
