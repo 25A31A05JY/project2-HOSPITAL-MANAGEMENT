@@ -10,7 +10,7 @@
 ->exit
 4.read choice
 5.perform operation
-->add-input details,store in list,addto queue
+->add-input details,store in list,add to queue
 ->view-display all patients
 ->search-find patient by id\name
 ->delete-remove patient record
