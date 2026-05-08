@@ -1,0 +1,57 @@
+1.System Design & Architecture
+The Hospital Patient Management System follows a procedural programming paradigm in C++.
+The program is organized into a main() function that drives a do-while loop, and four dedicated functions for each core operation.
+This modular design separates concerns and makes the code maintainable and extensible.
+
+2. Data Structure Design
+The Patient structure holds three fields: id (integer), name (string), and age (integer). 
+A global array patients[100] stores up to 100 patient records. 
+A global counter variable (count) tracks the number of currently registered patients.
+A C++ STL queue<int> (waitingQueue) stores patient IDs in FIFO order.
+
+3. Core Functional Modules
+
+Function
+Data Structure
+Time Complexity
+Description
+addPatient()
+Array + Queue
+O(1)
+Appends a new patient record and enqueues their ID
+viewPatients()
+Array
+O(n)
+Iterates and displays all patient records
+searchPatient()
+Array
+O(n)
+Linear search by Patient ID
+deletePatient()
+Array
+O(n)
+Finds record and shifts elements left to remove it
+
+
+4. Input Validation & Control Flow
+The do-while loop guarantees the menu is displayed at least once and continues until exit.
+The switch-case construct routes each valid choice to the appropriate function.
+The default case handles invalid menu inputs by displaying an error message.
+Boundary checks (count >= 100) prevent array overflow in addPatient().
+
+5. Queue for Waiting List
+The STL queue<int> is used to enqueue each new patient's ID upon registration. 
+This models real-world hospital waiting behavior where patients are served in the order of arrival (FIFO).
+While the current implementation stores IDs in the queue, this can be extended to process patients 
+(e.g., call the next patient) using queue front() and pop() operations.
+
+6. Deletion Strategy
+When a patient record is deleted, all subsequent elements in the array are shifted one position to the left to fill the gap. 
+This maintains a compact, contiguous array without holes. The count is then decremented. 
+This O(n) shift approach is appropriate for the small data size (max 100 patients) in this system.
+
+7. Development Environment
+Language: C++ (Standard: C++11 or later)
+Compiler: g++ / MinGW
+Libraries: <iostream>, <queue>, <string> (all standard)
+Interface: Console / Command Line
