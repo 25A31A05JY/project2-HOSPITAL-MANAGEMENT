@@ -1,0 +1,8 @@
+Future Enhancements
+•	File I/O Integration: Persist patient records to a file so data is retained between program runs.
+•	Priority Queue: Use a priority queue to handle emergency patients ahead of regular patients.
+•	Appointment Scheduling: Add date and time fields for appointment management.
+•	Doctor Assignment: Link patients to specific doctors or departments.
+•	GUI Interface: Develop a graphical interface using Qt or a web front-end for easier use.
+•	Database Backend: Replace the in-memory array with a database (e.g., SQLite) for scalability.
+•	Multi-User Access: Add authentication and role-based access for doctors, nurses, and admins
