@@ -1,0 +1,17 @@
+In the modern healthcare environment, efficient management of patient information is a critical requirement. Hospitals and clinics deal with a large number of patients daily, and keeping accurate, accessible, and up-to-date records is essential for providing quality care. Traditional paper-based systems are slow, error-prone, and difficult to manage as patient volume grows. The need for a reliable, automated patient management solution has therefore become increasingly important.
+
+The Hospital Patient Management System addresses this need by providing a structured, menu-driven console application built in C++. The system allows hospital staff to register new patients, maintain a comprehensive patient list, search for patients by their unique ID, and remove records as needed. The program runs in an interactive loop, returning to the main menu after every operation until the user chooses to exit.
+
+Data Structures Used
+The system is built on two fundamental data structures:
+•	Array (patients[]): A fixed-size array of Patient structures (capacity: 100) is used to store all patient records. Arrays allow constant-time indexed access, making it straightforward to iterate, search, and delete records.
+•	Queue (waitingQueue): A C++ STL queue stores the IDs of patients in the order they were added. This ensures a First-In-First-Out (FIFO) waiting order, mimicking real hospital queuing behavior.
+
+Objectives
+•	To provide a simple and reliable system for adding and managing patient records.
+•	To implement a queue-based waiting list for fair patient ordering.
+•	To enable efficient search and deletion of patient records by ID.
+•	To demonstrate the practical use of arrays and queues in a real-world scenario.
+•	To build a user-friendly, menu-driven interface for non-technical hospital staff.
+
+The system is developed as an academic project to illustrate the importance of data structures in software design. Its simplicity makes it an ideal starting point that can be extended with features such as file persistence, priority queuing for emergency cases, and a graphical user interface in future iterations.
