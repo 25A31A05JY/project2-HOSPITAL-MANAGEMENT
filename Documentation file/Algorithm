@@ -1,0 +1,41 @@
+The following step-by-step algorithm describes the complete flow of the Hospital Patient Management System:
+
+Main Program Flow
+1.	START
+2.	Initialize patient array (patients[100]) and a waiting queue. Set count = 0.
+3.	Display the MAIN MENU with options:    1. Add Patient    2. View Patients    3. Search Patient    4. Delete Patient    5. Exit
+4.	Read user choice (integer input).
+5.	Execute the operation corresponding to the choice (see sub-algorithms below).
+6.	Repeat steps 3–5 in a do-while loop until the user selects option 5.
+7.	Display "Exiting..." and STOP.
+
+Sub-Algorithm: Add Patient (Choice 1)
+8.	Check if count >= 100. If yes, display "Patient list is full!" and return.
+9.	Prompt and read: Patient ID, Name, Age into patients[count].
+10.	Push the Patient ID into waitingQueue.
+11.	Increment count by 1.
+12.	Display "Patient added successfully!" and return to main menu.
+
+Sub-Algorithm: View Patients (Choice 2)
+13.	If count == 0, display "No patients available!" and return.
+14.	Iterate through patients[0] to patients[count-1].
+15.	For each patient, display: ID, Name, Age.
+16.	Return to main menu.
+
+Sub-Algorithm: Search Patient (Choice 3)
+17.	Prompt and read the Patient ID to search.
+18.	Iterate through patients[0] to patients[count-1].
+19.	If patients[i].id == entered ID, display Name and Age, then return.
+20.	If no match found after full traversal, display "Patient not found!"
+21.	Return to main menu.
+
+Sub-Algorithm: Delete Patient (Choice 4)
+22.	Prompt and read the Patient ID to delete.
+23.	Iterate through patients[0] to patients[count-1].
+24.	If patients[i].id == entered ID:
+•	Shift all elements from index i+1 onward one position to the left.
+•	Decrement count by 1.
+•	Display "Patient deleted successfully!" and return.
+25.	If no match found, display "Patient not found!"
+26.	Return to main menu.
+ 
