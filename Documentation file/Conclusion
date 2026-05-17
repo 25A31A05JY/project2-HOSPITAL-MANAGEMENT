@@ -1,0 +1,22 @@
+Conclusion
+
+The Hospital Patient Management System successfully demonstrates the application of core data structures, 
+namely arrays and queues, in solving a practical real-world problem.
+The system provides a clean, interactive console interface that allows hospital staff to manage patient records effectively through four key operations:
+adding, viewing, searching, and deleting patients.
+
+The use of an array for patient storage enables straightforward indexed access and linear traversal,
+while the STL queue ensures patients are maintained in a fair first-come-first-served waiting order. 
+The modular function design keeps the code organized, readable, and easy to extend. Input validation and boundary checks ensure the program handles edge cases gracefully without crashing.
+
+Through testing, all operations were verified to work correctly,
+including error handling for cases such as an empty patient list, a full array, and patient IDs that do not exist in the system.
+The system met all its defined objectives and performs efficiently within the constraints of the data size.
+
+In conclusion, this project reinforced the importance of choosing appropriate data structures for a given problem.
+Arrays are ideal for direct indexed access and compact storage, while queues naturally model real-world waiting scenarios.
+The project provides a strong foundation that can be extended into a more comprehensive hospital information system in future work.
+
+
+
+
