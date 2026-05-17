@@ -1,0 +1,15 @@
+The Hospital Patient Management System is a console-based software application developed in C++ to automate and
+streamline the process of managing patient records in a hospital or clinic environment.
+The system leverages fundamental data structures, specifically arrays for storing patient records and a queue for managing the patient waiting list, 
+to deliver efficient and reliable operations.
+
+The application enables hospital staff to perform four core operations: adding new patients to the system,
+viewing the complete list of registered patients, searching for a specific patient by their unique ID, and deleting patient records when required.
+Each patient record stores essential information including a unique patient ID, the patient's full name, and age.
+
+By eliminating manual paperwork and reducing human error, the system improves accuracy and efficiency in patient data management. 
+The queue-based waiting list ensures that patients are attended to in the order they arrive, maintaining fairness and organization.
+The use of arrays allows quick indexed access and efficient record management within a bounded capacity.
+
+Overall, this project demonstrates the practical application of data structures in solving real-world healthcare management problems while providing a clean,
+menu-driven interface that is easy to use even with limited technical knowledge.
